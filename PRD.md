@@ -1,133 +1,155 @@
 # Planning Guide
 
-A cutting-edge personal portfolio website that uses AI to automatically fetch, analyze, and present GitHub projects with intelligent insights about technologies, architecture, and innovation level.
+A professional service sales platform for Altus Stratus showcasing expertise in web scraping, AI integration, and system integrations. Designed to convert visitors into clients by demonstrating technical capabilities and providing clear pathways to hire.
 
 **Experience Qualities**:
-1. **Futuristic** - Interface feels like it's from the future with glass morphism, smooth animations, and AI-powered features
-2. **Intelligent** - AI automatically analyzes and categorizes projects, extracting meaningful insights without manual input
-3. **Impressive** - Showcases technical expertise through both the projects displayed and the innovative implementation of the site itself
+1. **Professional & Trustworthy** - Clean, modern design that inspires confidence in technical expertise and business reliability
+2. **Results-Focused** - Every element emphasizes solutions, outcomes, and value delivered to clients
+3. **Action-Oriented** - Clear CTAs and contact options throughout to facilitate sales conversations
 
-**Complexity Level**: Complex Application (advanced functionality, AI integration, real-time data fetching)
-- This site demonstrates technical prowess through its own implementation, using AI to analyze GitHub repos, extract tech stacks, and generate intelligent summaries
+**Complexity Level**: Light Application (multiple features with basic state)
+- Service showcase with contact forms, project portfolio, and testimonials focused on lead generation and client acquisition
 
 ## Essential Features
 
-### AI-Powered GitHub Project Analysis
-- **Functionality**: Fetches user's GitHub repositories and uses AI to analyze code, extract technologies used, identify project type, and generate intelligent descriptions
-- **Purpose**: Automatically maintains an up-to-date portfolio without manual updates, showcasing AI integration expertise
-- **Trigger**: Page load or manual refresh button
-- **Progression**: Click refresh → Fetch GitHub repos → AI analyzes each project → Extract tech stack → Generate insights → Display in grid with glassmorphic cards
-- **Success criteria**: Projects display with accurate tech identification, intelligent categorization, and compelling AI-generated highlights
-
-### Interactive Project Showcase
-- **Functionality**: Display projects in an ultra-modern grid with hover effects, tech badges, and expandable details
-- **Purpose**: Present work in a visually stunning way that reflects modern development skills
-- **Trigger**: User scrolls to projects section or hovers over project cards
-- **Progression**: Scroll to section → Cards animate in → Hover on card → Glass effect intensifies → Click card → Expanded view with details → View on GitHub
-- **Success criteria**: Smooth animations, clear hierarchy, instant understanding of each project's purpose and tech stack
-
-### Professional Profile Header
-- **Functionality**: Display profile with GitHub avatar, name, specialties (Python, PHP, AI Integration), and dynamic tagline
-- **Purpose**: Immediately establish credibility and expertise focus
+### Hero Section with Clear Value Proposition
+- **Functionality**: Compelling headline, tagline focused on client outcomes, and immediate contact CTA
+- **Purpose**: Instantly communicate what services are offered and why visitors should hire
 - **Trigger**: Page load
-- **Progression**: Page loads → Avatar fades in → Name appears → Specialty badges animate → Tagline types out
-- **Success criteria**: Professional first impression, clear value proposition, links to GitHub profile
+- **Progression**: Page loads → Hero text appears → Value prop highlighted → Primary CTA visible → Click to contact
+- **Success criteria**: Clear understanding of services within 3 seconds, obvious next action
 
-### Technology Expertise Visualization
-- **Functionality**: Visual representation of skills based on actual GitHub usage patterns
-- **Purpose**: Provide evidence-based skill showcase rather than self-rated bars
-- **Trigger**: Scroll to skills section
-- **Progression**: Scroll into view → AI analyzes repo languages → Generate tech frequency → Animate skill indicators → Show primary technologies
-- **Success criteria**: Accurate representation of actual tech usage, visually compelling display
+### Services Showcase
+- **Functionality**: Three main service cards - Web Scraping, AI Integration, System Integrations with descriptions and pricing indicators
+- **Purpose**: Detail what's offered, technologies used, and typical use cases to attract qualified leads
+- **Trigger**: Scroll to services section
+- **Progression**: Scroll → Service cards appear → Hover for details → Click to see examples or contact
+- **Success criteria**: Visitors understand service offerings and can envision their project
+
+### Portfolio/Case Studies
+- **Functionality**: Showcase real scraping projects, AI implementations, and integrations with results achieved
+- **Purpose**: Build trust through proof of expertise and demonstrate capability to deliver
+- **Trigger**: Scroll to portfolio section
+- **Progression**: Scroll → Projects displayed → Click project → View details/tech stack/results → Contact about similar project
+- **Success criteria**: Projects clearly demonstrate expertise relevant to target clients
+
+### Contact Form with Lead Capture
+- **Functionality**: Multi-step contact form capturing project type, budget range, timeline, and contact info
+- **Purpose**: Qualify leads and gather project details to enable quick, informed responses
+- **Trigger**: Click contact CTA or scroll to contact section
+- **Progression**: Click contact → Select service type → Describe project → Provide timeline/budget → Submit → Confirmation with response timeframe
+- **Success criteria**: Form submissions contain actionable information for sales follow-up
+
+### Technology Stack Display
+- **Functionality**: Visual showcase of tools and technologies used - Python, PHP, APIs, AI models, databases
+- **Purpose**: Build credibility and help clients understand technical capabilities
+- **Trigger**: Scroll to tech stack section
+- **Progression**: Scroll → Tech icons appear → Hover for descriptions → Understand breadth of expertise
+- **Success criteria**: Clients recognize relevant technologies and trust technical depth
+
+### Testimonials/Social Proof
+- **Functionality**: Client testimonials, project outcomes, and success metrics
+- **Purpose**: Reduce purchase anxiety and build trust through third-party validation
+- **Trigger**: Scroll to testimonials section
+- **Progression**: Scroll → Testimonials displayed → Read success stories → Feel confident to hire
+- **Success criteria**: Testimonials feel authentic and address common client concerns
 
 ## Edge Case Handling
-- **No GitHub Projects**: Show sample projects with clear "Connect GitHub" call-to-action
-- **AI API Failure**: Gracefully fall back to basic repo data without AI insights, show retry option
-- **Rate Limiting**: Cache results in KV store, show cached data with timestamp
-- **Large Repo Count**: Filter to most recent/starred repos, allow pagination or "show more"
-- **Private Repos**: Only display public repos with clear indicator of additional private work
+- **No Projects to Display**: Show service offerings prominently with "Contact for Custom Solutions" CTA
+- **Form Spam**: Implement basic validation and honeypot fields to reduce spam submissions
+- **Mobile Contact Forms**: Use drawer/sheet component for better mobile UX
+- **Slow Form Submission**: Show loading state and confirmation message
+- **Budget Concerns**: Offer "Request Quote" option for those unsure about pricing
+- **International Clients**: Display timezone and response time expectations
 
 ## Design Direction
-The design should feel like a glimpse into the future of web development - think Apple's design language meets sci-fi interfaces with AI integration throughout. Glass morphism, smooth physics-based animations, and subtle gradients create an elegant yet cutting-edge atmosphere that demonstrates mastery of modern web technologies.
+The design should feel professional, modern, and trustworthy - think corporate tech company meets boutique development agency. Clean layouts with strategic use of color to highlight CTAs and guide visitors toward contact. The design should communicate "we can handle complex technical challenges" while remaining approachable.
 
 ## Color Selection
-Custom palette with dark, futuristic theme using vibrant accent colors
+Professional palette with trust-building blues and action-driving accents
 
-- **Primary Color**: Deep Electric Blue (oklch(0.45 0.25 250)) - Commands attention for primary actions and communicates technology/innovation
+- **Primary Color**: Corporate Blue (oklch(0.50 0.15 250)) - Professional, trustworthy, tech-focused for primary actions
 - **Secondary Colors**: 
-  - Dark Slate (oklch(0.15 0.01 250)) - Sophisticated background that makes content pop
-  - Midnight Blue (oklch(0.20 0.02 250)) - Card backgrounds with depth
-- **Accent Color**: Vibrant Cyan (oklch(0.75 0.20 200)) - High-tech highlight for CTAs and interactive elements
+  - Deep Navy (oklch(0.15 0.02 250)) - Sophisticated background for authority
+  - Light Slate (oklch(0.95 0.01 250)) - Clean, readable foreground
+- **Accent Color**: Action Orange (oklch(0.65 0.18 40)) - Energetic highlight for CTAs that drives conversions
 - **Foreground/Background Pairings**:
-  - Background (Dark Slate oklch(0.15 0.01 250)): Light text oklch(0.95 0.01 250) - Ratio 12.8:1 ✓
-  - Card (Midnight Blue oklch(0.20 0.02 250)): Light text oklch(0.95 0.01 250) - Ratio 10.5:1 ✓
-  - Primary (Electric Blue oklch(0.45 0.25 250)): White text oklch(1 0 0) - Ratio 5.2:1 ✓
-  - Accent (Vibrant Cyan oklch(0.75 0.20 200)): Dark text oklch(0.15 0.01 250) - Ratio 11.2:1 ✓
-  - Muted (oklch(0.25 0.01 250)): Muted text oklch(0.60 0.05 250) - Ratio 4.8:1 ✓
+  - Background (Deep Navy oklch(0.15 0.02 250)): Light text oklch(0.95 0.01 250) - Ratio 12.5:1 ✓
+  - Card (oklch(0.20 0.02 250)): Light text oklch(0.95 0.01 250) - Ratio 10.2:1 ✓
+  - Primary (Corporate Blue oklch(0.50 0.15 250)): White text oklch(1 0 0) - Ratio 5.8:1 ✓
+  - Accent (Action Orange oklch(0.65 0.18 40)): Dark text oklch(0.15 0.02 250) - Ratio 8.5:1 ✓
+  - Success Green (oklch(0.55 0.15 140)): White text oklch(1 0 0) - Ratio 5.2:1 ✓
 
 ## Font Selection
-A modern, tech-forward typeface that balances readability with personality - Inter for its geometric precision and excellent screen rendering, paired with JetBrains Mono for code elements to emphasize technical expertise.
+Professional, highly readable typefaces that work across devices and communicate technical competence - Inter for its clean geometric design and Roboto Mono for code/technical elements to emphasize precision.
 
 - **Typographic Hierarchy**:
-  - H1 (Name/Hero): Inter Bold/56px/tight letter-spacing/-0.02em
-  - H2 (Section Headers): Inter SemiBold/36px/normal letter-spacing
-  - H3 (Project Titles): Inter SemiBold/24px/normal letter-spacing
+  - H1 (Main Headline): Inter Bold/48px/tight letter-spacing/-0.01em
+  - H2 (Section Titles): Inter SemiBold/36px/normal letter-spacing
+  - H3 (Service/Project Titles): Inter SemiBold/24px/normal letter-spacing
   - Body (Descriptions): Inter Regular/16px/relaxed line-height/1.6
-  - Small (Metadata): Inter Medium/14px/normal letter-spacing
-  - Code (Tech Stack): JetBrains Mono Regular/14px/monospace feel
+  - CTA Buttons: Inter SemiBold/16px/uppercase/letter-spacing/0.05em
+  - Small (Metadata/Labels): Inter Medium/14px/normal
+  - Code/Tech: Roboto Mono Regular/14px/monospace
 
 ## Animations
-Animations should feel physics-based and responsive, creating the impression of a living, intelligent interface that responds naturally to user interaction while guiding attention to AI-powered features.
+Purposeful, professional animations that guide attention without distracting from content or sales messaging.
 
-- **Purposeful Meaning**: Smooth, elastic transitions communicate the fluidity of AI analysis; glow effects pulse subtly to indicate "thinking"; cards float and tilt on hover to feel tangible
+- **Purposeful Meaning**: Smooth fade-ins communicate polish; subtle hover effects invite interaction; form feedback provides reassurance
 - **Hierarchy of Movement**: 
-  1. AI analysis indicators (most prominent - pulsing, glowing)
-  2. Project card interactions (medium - 3D transforms, glass effects)
-  3. Section transitions (subtle - fade and slide)
-  4. Micro-interactions (delicate - icon animations, badge appearances)
+  1. CTA buttons (most prominent - hover scale, glow on primary actions)
+  2. Service cards (medium - lift on hover, subtle shadows)
+  3. Section reveals (subtle - fade and slide up on scroll)
+  4. Form interactions (gentle - input focus states, success animations)
 
 ## Component Selection
 - **Components**: 
-  - Card (project displays with heavy customization for glass morphism and 3D transforms)
-  - Badge (tech stack tags with gradient backgrounds)
-  - Button (CTA elements with hover glow effects)
-  - Skeleton (loading states during AI analysis)
-  - Scroll Area (for project lists if extensive)
-  - Avatar (GitHub profile image with border effects)
-  - Separator (subtle dividers with gradient)
+  - Card (service offerings, project showcases with professional styling)
+  - Button (prominent CTAs with clear hierarchy - primary/secondary/outline)
+  - Form components (Input, Textarea, Select for contact/quote forms)
+  - Badge (technology tags, service categories)
+  - Dialog (project detail modals, contact form on mobile)
+  - Tabs (switching between service types or project categories)
+  - Accordion (FAQ section, service details)
+  - Separator (clean section divisions)
   
 - **Customizations**: 
-  - Glass morphic cards with backdrop-blur and semi-transparent backgrounds
-  - Gradient overlays on hover states
-  - 3D transform effects on project cards (rotateX/rotateY on mouse position)
-  - Custom AI "thinking" animation with pulsing gradient rings
-  - Floating animation for hero elements
+  - Large, prominent CTA buttons with hover glow effects
+  - Service cards with subtle shadows and hover lift
+  - Form inputs with clear focus states and validation feedback
+  - Success indicators for form submissions
+  - Professional gradient overlays on hero section
   
 - **States**: 
-  - Buttons: Default (gradient border), Hover (glow effect + scale 1.05), Active (scale 0.98), Loading (pulsing gradient)
-  - Cards: Default (glass effect), Hover (intensified blur + lift + tilt), Active (pressed state)
-  - Inputs: Focused (cyan glow ring), Filled (subtle success indicator)
+  - Buttons: Default (solid/outline), Hover (scale 1.02 + shadow), Active (scale 0.98), Disabled (opacity 0.5)
+  - Cards: Default (subtle shadow), Hover (lift + shadow increase)
+  - Inputs: Default (border), Focus (ring + accent color), Error (red border), Success (green indicator)
+  - Forms: Empty, Filling, Validating, Success, Error
   
 - **Icon Selection**: 
-  - @phosphor-icons/react throughout for consistency
-  - GithubLogo for repo links
-  - Sparkle for AI features
-  - Code for tech stack
-  - Lightning for performance/highlights
-  - ArrowRight for CTAs
-  - Brain for AI analysis indicator
+  - @phosphor-icons/react for consistency
+  - ChartLineUp for growth/results
+  - Robot for AI services
+  - Database for scraping/data
+  - GitBranch for integrations
+  - CheckCircle for success states
+  - EnvelopeSimple for contact
+  - Phone for call-to-action
+  - ArrowRight for navigation/CTAs
   
 - **Spacing**: 
-  - Container max-width: 1280px
-  - Section padding: py-24 (large breathing room)
+  - Container max-width: 1200px
+  - Section padding: py-20 (generous but not excessive)
   - Card padding: p-6 to p-8
-  - Gap between cards: gap-6 on mobile, gap-8 on desktop
-  - Consistent 4/8/16/24/32px rhythm (Tailwind's 1/2/4/6/8 scale)
+  - Gap between cards: gap-6
+  - CTA spacing: prominent margins to draw attention
+  - Consistent 8px grid system (Tailwind's 2/4/6/8/12/16 scale)
   
 - **Mobile**: 
-  - Mobile-first with single column card layout
-  - Stack hero content vertically on mobile
-  - Reduce font sizes proportionally (Hero 36px mobile vs 56px desktop)
-  - Simplify 3D effects on mobile (performance consideration)
-  - Bottom sheet for project details on mobile vs modal on desktop
-  - Touch-friendly button sizes (min 44x44px)
+  - Mobile-first approach with touch-optimized CTAs
+  - Single column layouts on mobile
+  - Drawer for contact forms on small screens
+  - Stack service cards vertically
+  - Reduce font sizes proportionally (H1: 32px mobile vs 48px desktop)
+  - Sticky mobile CTA button
+  - Touch-friendly button sizes (minimum 44x44px)
