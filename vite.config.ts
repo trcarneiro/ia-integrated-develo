@@ -22,4 +22,10 @@ export default defineConfig({
       '@': resolve(projectRoot, 'src')
     }
   },
+  // Ensure CNAME is copied to dist for GitHub Pages custom domain
+  publicDir: 'public',
+  build: {
+    outDir: 'dist',
+    copyPublicDir: true
+  }
 });
