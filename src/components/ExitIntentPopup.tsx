@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, Download } from '@phosphor-icons/react'
-import { useKV } from '@github/spark/hooks'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -9,18 +8,27 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 export function ExitIntentPopup() {
   const [isOpen, setIsOpen] = useState(false)
-  const [shown, setShown] = useKV('exit-popup', '')
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  const [leads, setLeads] = useKV<any[]>('exit-leads', [])
+  
+  // Use localStorage instead of Spark's useKV (GitHub Pages doesn't support Spark runtime)
+  const getShown = () => localStorage.getItem('exit-popup-shown') === 'yes'
+  const setShownFlag = () => localStorage.setItem('exit-popup-shown', 'yes')
+  
+  const saveLeadToStorage = (leadData: { name: string; email: string; date: string }) => {
+    const existing = localStorage.getItem('exit-leads')
+    const leads = existing ? JSON.parse(existing) : []
+    leads.push(leadData)
+    localStorage.setItem('exit-leads', JSON.stringify(leads))
+  }
 
   useEffect(() => {
-    if (shown === 'yes') return
+    if (getShown()) return
 
     const handleMouse = (e: MouseEvent) => {
       if (e.clientY <= 0) {
         setIsOpen(true)
-        setShown('yes')
+        setShownFlag()
       }
     }
 
@@ -32,13 +40,13 @@ export function ExitIntentPopup() {
       clearTimeout(timer)
       document.removeEventListener('mouseleave', handleMouse)
     }
-  }, [shown, setShown])
+  }, [])
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!email || !name) return
 
-    await setLeads([...(leads || []), { name, email, date: new Date().toISOString() }])
+    saveLeadToStorage({ name, email, date: new Date().toISOString() })
     toast.success('✅ eBook enviado para seu email!')
     setTimeout(() => setIsOpen(false), 2000)
   }

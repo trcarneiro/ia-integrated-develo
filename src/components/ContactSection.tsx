@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { EnvelopeSimple, CheckCircle, Warning, ArrowRight, WhatsappLogo } from '@phosphor-icons/react'
-import { useKV } from '@github/spark/hooks'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -25,7 +24,14 @@ interface ContactSectionProps {
 }
 
 export function ContactSection({ initialService }: ContactSectionProps) {
-  const [leads, setLeads] = useKV<ContactFormData[]>('contact-leads', [])
+  // Use localStorage instead of Spark's useKV (GitHub Pages doesn't support Spark runtime)
+  const saveLeadToStorage = (leadData: ContactFormData & { timestamp: string }) => {
+    const existing = localStorage.getItem('contact-leads')
+    const leads = existing ? JSON.parse(existing) : []
+    leads.push(leadData)
+    localStorage.setItem('contact-leads', JSON.stringify(leads))
+  }
+  
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -55,10 +61,10 @@ export function ContactSection({ initialService }: ContactSectionProps) {
     try {
       await new Promise(resolve => setTimeout(resolve, 1000))
       
-      setLeads(currentLeads => [...(currentLeads || []), {
+      saveLeadToStorage({
         ...formData,
         timestamp: new Date().toISOString(),
-      } as any])
+      })
 
       setIsSubmitted(true)
       toast.success('Mensagem enviada com sucesso!')

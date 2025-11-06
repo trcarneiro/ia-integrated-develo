@@ -1,5 +1,10 @@
 // Biblioteca de automação com IA para análise de projetos
 
+// Helper to check if Spark runtime is available (GitHub Pages doesn't support it)
+const isSparkAvailable = () => {
+  return typeof window !== 'undefined' && window.spark && typeof window.spark.llm === 'function'
+}
+
 interface ROIAnalysis {
   monthlyTimeSaved: number
   annualSavings: number
@@ -67,6 +72,11 @@ Considere:
 `
 
   try {
+    // Check if Spark is available (not available on GitHub Pages static hosting)
+    if (!isSparkAvailable()) {
+      throw new Error('Spark runtime not available')
+    }
+    
     const result = await window.spark.llm(prompt, 'gpt-4o-mini', true)
     const analysis = JSON.parse(result)
     return analysis
@@ -109,6 +119,10 @@ Critérios de complexidade:
 `
 
   try {
+    if (!isSparkAvailable()) {
+      throw new Error('Spark runtime not available')
+    }
+    
     const result = await window.spark.llm(prompt, 'gpt-4o-mini', true)
     return JSON.parse(result)
   } catch (error) {
@@ -154,6 +168,10 @@ Considere:
 `
 
   try {
+    if (!isSparkAvailable()) {
+      throw new Error('Spark runtime not available')
+    }
+    
     const result = await window.spark.llm(prompt, 'gpt-4o-mini', true)
     return JSON.parse(result)
   } catch (error) {
@@ -205,6 +223,10 @@ Budget:
 `
 
   try {
+    if (!isSparkAvailable()) {
+      throw new Error('Spark runtime not available')
+    }
+    
     const result = await window.spark.llm(prompt, 'gpt-4o-mini', true)
     return JSON.parse(result)
   } catch (error) {
