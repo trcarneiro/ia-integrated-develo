@@ -126,15 +126,19 @@ export function ServicesSection({ onContactClick }: ServicesSectionProps) {
                   <CardFooter className="flex flex-col gap-3 pt-6 border-t">
                     <div className="w-full text-center">
                       <span className="text-2xl font-bold text-primary">{service.pricing}</span>
+                      <p className="text-xs text-muted-foreground mt-1">💎 Promoção de lançamento - 20% OFF</p>
                     </div>
                     <Button 
-                      className="w-full group"
+                      className="w-full group shadow-md"
                       size="lg"
                       onClick={() => onContactClick(service.title)}
                     >
-                      Solicitar Orçamento
+                      Começar Agora
                       <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
+                    <p className="text-xs text-center text-muted-foreground">
+                      ⚡ Vagas limitadas • 🎁 Consultoria gratuita incluída
+                    </p>
                   </CardFooter>
                 </Card>
               </motion.div>

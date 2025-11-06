@@ -1,8 +1,10 @@
 import { useState, useRef } from 'react'
 import { Toaster } from 'sonner'
 import { HeroSales } from './components/HeroSales'
+import { StatsSection } from './components/StatsSection'
 import { ServicesSection } from './components/ServicesSection'
 import { PortfolioSection } from './components/PortfolioSection'
+import { TestimonialsSection } from './components/TestimonialsSection'
 import { TechStackSection } from './components/TechStackSection'
 import { FAQSection } from './components/FAQSection'
 import { ContactSection } from './components/ContactSection'
@@ -28,9 +30,13 @@ function App() {
       
       <HeroSales onContactClick={() => scrollToContact()} />
       
+      <StatsSection />
+      
       <ServicesSection onContactClick={scrollToContact} />
       
       <PortfolioSection />
+      
+      <TestimonialsSection />
       
       <TechStackSection />
       

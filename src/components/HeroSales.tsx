@@ -32,7 +32,7 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
               className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6"
             >
               <ChartLineUp size={20} weight="duotone" className="text-primary" />
-              <span className="text-sm font-medium">Soluções Técnicas para Crescimento</span>
+              <span className="text-sm font-medium">🔥 Apenas 3 vagas disponíveis este mês</span>
             </motion.div>
 
             <motion.h1
@@ -65,10 +65,10 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
             >
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 group"
+                className="text-lg px-8 py-6 group shadow-lg shadow-primary/25"
                 onClick={onContactClick}
               >
-                Solicitar Orçamento
+                Quero Meu Orçamento Gratuito
                 <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               
@@ -80,9 +80,18 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
                   document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
-                Ver Serviços
+                Ver Como Funciona
               </Button>
             </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9 }}
+              className="text-sm text-muted-foreground"
+            >
+              ✓ Sem compromisso • ✓ Resposta em 24h • ✓ Consultoria inicial gratuita
+            </motion.p>
           </motion.div>
 
           <motion.div

@@ -10,35 +10,39 @@ import {
 const faqs = [
   {
     question: 'Quanto tempo leva para desenvolver um projeto?',
-    answer: 'O prazo varia conforme a complexidade. Projetos simples de web scraping podem ser entregues em 1-2 semanas. Integrações médias levam 2-4 semanas, e projetos complexos de IA podem demorar 1-2 meses. Sempre fornecemos um cronograma detalhado na proposta.'
+    answer: 'Projetos simples podem começar em 48h! Web scraping básico: 1-2 semanas. Integrações: 2-4 semanas. IA complexa: 1-2 meses. Trabalhamos com sprints ágeis, você vê resultados desde a primeira semana. Oferecemos cronograma detalhado na proposta inicial.'
+  },
+  {
+    question: 'E se eu não gostar do resultado final?',
+    answer: '🎁 Garantia de 30 dias ou seu dinheiro de volta! Se não ficar 100% satisfeito, devolvemos seu investimento integral. Sem perguntas, sem burocracia. Nosso compromisso é sua satisfação total.'
+  },
+  {
+    question: 'Os custos vão além do orçamento inicial?',
+    answer: 'NUNCA! O valor do orçamento é final e fixo. Sem taxas ocultas, sem surpresas. Você paga exatamente o que foi acordado. Se surgir algo fora do escopo, sempre consultamos antes e você decide se quer adicionar ou não.'
   },
   {
     question: 'Como funciona o processo de orçamento e pagamento?',
-    answer: 'Após entender seu projeto, enviamos uma proposta detalhada com escopo, prazo e valor. Normalmente trabalhamos com 50% de entrada e 50% na entrega. Para projetos maiores, dividimos em milestones com pagamentos progressivos.'
+    answer: 'Simples e seguro: 1) Análise gratuita do projeto, 2) Orçamento detalhado em 24h, 3) Pagamento: 50% início + 50% entrega (ou parcelado para projetos maiores), 4) Aceite e começamos! Aceitamos PIX, cartão, transferência.'
   },
   {
-    question: 'Vocês fornecem manutenção após a entrega?',
-    answer: 'Sim! Todo projeto inclui 30 dias de garantia e suporte técnico. Após esse período, oferecemos planos mensais de manutenção que incluem correções, atualizações e melhorias. A manutenção é especialmente importante para scraping (sites mudam) e integrações com APIs.'
+    question: 'E se o site/API mudar e parar de funcionar?',
+    answer: 'Incluímos 30 dias de garantia e ajustes gratuitos! Depois disso, oferecemos planos de manutenção desde R$199/mês que incluem monitoramento 24/7, correções emergenciais e atualizações. Você nunca fica na mão!'
   },
   {
-    question: 'Quais tipos de dados vocês conseguem extrair?',
-    answer: 'Podemos extrair praticamente qualquer informação pública: preços, produtos, avaliações, notícias, dados de redes sociais, informações de empresas, vagas de emprego, imóveis, etc. Se está visível em um site, conseguimos automatizar a extração.'
+    question: 'Preciso ter conhecimento técnico para usar?',
+    answer: 'ZERO conhecimento necessário! Entregamos tudo pronto: dashboards visuais, planilhas automáticas, relatórios por email, integração direta nos seus sistemas. Você usa, nós cuidamos da tecnologia. Inclui treinamento completo e suporte vitalício.'
   },
   {
-    question: 'É legal fazer web scraping?',
-    answer: 'Sim, scraping de dados públicos é legal no Brasil e na maioria dos países. Respeitamos sempre os termos de uso, robots.txt e não sobrecarregamos servidores. Trabalhamos apenas com dados públicos e ajudamos você a usar os dados de forma ética e legal.'
+    question: 'É legal fazer web scraping? Posso ter problemas?',
+    answer: 'Totalmente legal quando feito corretamente! Trabalhamos apenas com dados públicos, respeitamos robots.txt e taxas de requisição. Você recebe consultoria jurídica básica incluída e certificado de conformidade. 100% ético e dentro da lei.'
   },
   {
-    question: 'Que tipos de integrações com IA vocês fazem?',
-    answer: 'Integramos GPT/OpenAI, análise de texto, classificação automática, chatbots, recomendações personalizadas, análise de sentimento, extração de informações, resumos automáticos e muito mais. Criamos soluções customizadas usando as melhores ferramentas de IA disponíveis.'
+    question: 'Por que não contratar um desenvolvedor freelancer mais barato?',
+    answer: 'Qualidade, garantia e suporte fazem a diferença! Freelancers baratos: código de baixa qualidade, sem garantia, somem depois da entrega. Conosco: código profissional, documentado, com garantia, suporte contínuo e manutenção. Você economiza a longo prazo!'
   },
   {
-    question: 'Preciso ter conhecimento técnico para usar as soluções?',
-    answer: 'Não! Desenvolvemos interfaces simples e intuitivas. Você receberá os dados em formatos fáceis (Excel, JSON, dashboard) ou integrados diretamente em seus sistemas. Também fornecemos documentação completa e treinamento quando necessário.'
-  },
-  {
-    question: 'Trabalham com clientes internacionais?',
-    answer: 'Sim! Atendemos clientes no Brasil e exterior. Trabalhamos em português, inglês e espanhol. Os pagamentos podem ser feitos via transferência internacional, PayPal ou outras plataformas de pagamento.'
+    question: 'Consigo testar antes de comprar?',
+    answer: 'SIM! Oferecemos POC (Prova de Conceito) gratuita para projetos acima de $2.000. Para projetos menores, entregamos a primeira versão funcional em 7 dias. Se não atender expectativas, paramos e devolvemos 100% do valor pago.'
   },
 ]
 

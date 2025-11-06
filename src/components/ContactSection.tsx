@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { EnvelopeSimple, CheckCircle, Warning, ArrowRight } from '@phosphor-icons/react'
+import { EnvelopeSimple, CheckCircle, Warning, ArrowRight, WhatsappLogo } from '@phosphor-icons/react'
 import { useKV } from '@github/spark/hooks'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
@@ -93,10 +93,21 @@ export function ContactSection({ initialService }: ContactSectionProps) {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Vamos Conversar
+            Comece Seu Projeto Agora
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Preencha o formulário abaixo com detalhes do seu projeto e retornaremos em até 24 horas
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+            Preencha o formulário ou fale diretamente no WhatsApp
+          </p>
+          <Button
+            size="lg"
+            className="bg-green-600 hover:bg-green-700 text-white gap-2"
+            onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para automação/IA', '_blank')}
+          >
+            <WhatsappLogo size={24} weight="fill" />
+            Falar no WhatsApp Agora
+          </Button>
+          <p className="text-sm text-muted-foreground mt-3">
+            ⚡ Resposta imediata • 💬 Tire suas dúvidas em tempo real
           </p>
         </motion.div>
 
@@ -209,90 +220,58 @@ export function ContactSection({ initialService }: ContactSectionProps) {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="company">Empresa (opcional)</Label>
-                        <Input
-                          id="company"
-                          value={formData.company}
-                          onChange={(e) => handleChange('company', e.target.value)}
-                          placeholder="Nome da sua empresa"
-                        />
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="service">Serviço de Interesse *</Label>
-                          <Select value={formData.service} onValueChange={(value) => handleChange('service', value)}>
-                            <SelectTrigger id="service">
-                              <SelectValue placeholder="Selecione um serviço" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="Web Scraping">Web Scraping</SelectItem>
-                              <SelectItem value="Integração com IA">Integração com IA</SelectItem>
-                              <SelectItem value="Integrações de Sistemas">Integrações de Sistemas</SelectItem>
-                              <SelectItem value="Custom Project">Projeto Customizado</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="budget">Orçamento Estimado</Label>
-                          <Select value={formData.budget} onValueChange={(value) => handleChange('budget', value)}>
-                            <SelectTrigger id="budget">
-                              <SelectValue placeholder="Selecione uma faixa" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              <SelectItem value="< $500">Menos de $500</SelectItem>
-                              <SelectItem value="$500 - $1,000">$500 - $1,000</SelectItem>
-                              <SelectItem value="$1,000 - $2,500">$1,000 - $2,500</SelectItem>
-                              <SelectItem value="$2,500 - $5,000">$2,500 - $5,000</SelectItem>
-                              <SelectItem value="$5,000+">Mais de $5,000</SelectItem>
-                              <SelectItem value="Não tenho certeza">Não tenho certeza</SelectItem>
-                            </SelectContent>
-                          </Select>
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="timeline">Prazo Desejado</Label>
-                        <Select value={formData.timeline} onValueChange={(value) => handleChange('timeline', value)}>
-                          <SelectTrigger id="timeline">
-                            <SelectValue placeholder="Quando precisa?" />
+                        <Label htmlFor="service">Serviço de Interesse *</Label>
+                        <Select value={formData.service} onValueChange={(value) => handleChange('service', value)}>
+                          <SelectTrigger id="service">
+                            <SelectValue placeholder="Selecione um serviço" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="Urgente (1-2 semanas)">Urgente (1-2 semanas)</SelectItem>
-                            <SelectItem value="Rápido (3-4 semanas)">Rápido (3-4 semanas)</SelectItem>
-                            <SelectItem value="Normal (1-2 meses)">Normal (1-2 meses)</SelectItem>
-                            <SelectItem value="Flexível (2+ meses)">Flexível (2+ meses)</SelectItem>
+                            <SelectItem value="Web Scraping">Web Scraping</SelectItem>
+                            <SelectItem value="Integração com IA">Integração com IA</SelectItem>
+                            <SelectItem value="Integrações de Sistemas">Integrações de Sistemas</SelectItem>
+                            <SelectItem value="Custom Project">Projeto Customizado</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">Detalhes do Projeto *</Label>
+                        <Label htmlFor="message">Descreva Seu Projeto *</Label>
                         <Textarea
                           id="message"
                           value={formData.message}
                           onChange={(e) => handleChange('message', e.target.value)}
-                          placeholder="Descreva seu projeto, objetivos e requisitos específicos..."
+                          placeholder="Conte-nos sobre seu projeto, objetivos e o problema que precisa resolver..."
                           className="min-h-[120px]"
                           required
                         />
                       </div>
 
+                      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-sm">
+                        <p className="font-semibold text-primary mb-1">🎁 Garantia de Satisfação</p>
+                        <p className="text-muted-foreground">
+                          Não gostou do resultado? Devolveremos 100% do seu investimento nos primeiros 30 dias.
+                        </p>
+                      </div>
+
                       <Button
                         type="submit"
                         size="lg"
-                        className="w-full group"
+                        className="w-full group shadow-lg shadow-primary/25"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
                           'Enviando...'
                         ) : (
                           <>
-                            Enviar Solicitação
+                            Receber Minha Proposta Gratuita
                             <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
                           </>
                         )}
                       </Button>
+                      
+                      <p className="text-xs text-center text-muted-foreground">
+                        ✓ Resposta em até 24h • ✓ Sem compromisso • ✓ Consultoria inicial gratuita
+                      </p>
                     </motion.form>
                   )}
                 </AnimatePresence>
