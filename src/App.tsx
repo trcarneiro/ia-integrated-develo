@@ -3,8 +3,11 @@ import { Toaster } from 'sonner'
 import { HeroSales } from './components/HeroSales'
 import { StatsSection } from './components/StatsSection'
 import { ServicesSection } from './components/ServicesSection'
+import { ROICalculatorSection } from './components/ROICalculatorSection'
 import { PortfolioSection } from './components/PortfolioSection'
 import { TestimonialsSection } from './components/TestimonialsSection'
+import { LeadQualifierBot } from './components/LeadQualifierBot'
+import { FeasibilityChecker } from './components/FeasibilityChecker'
 import { TechStackSection } from './components/TechStackSection'
 import { FAQSection } from './components/FAQSection'
 import { ContactSection } from './components/ContactSection'
@@ -34,9 +37,15 @@ function App() {
       
       <ServicesSection onContactClick={scrollToContact} />
       
+      <ROICalculatorSection />
+      
+      <FeasibilityChecker />
+      
       <PortfolioSection />
       
       <TestimonialsSection />
+      
+      <LeadQualifierBot />
       
       <TechStackSection />
       
