@@ -93,21 +93,21 @@ export function ContactSection({ initialService }: ContactSectionProps) {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Comece Seu Projeto Agora
+            Vamos Conversar Sobre Seu Projeto
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
-            Preencha o formulário ou fale diretamente no WhatsApp
+            Conte-me sobre seu sistema legado e como posso ajudar. Resposta pessoal em até 24h
           </p>
           <Button
             size="lg"
             className="bg-green-600 hover:bg-green-700 text-white gap-2"
-            onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de solicitar um orçamento para automação/IA', '_blank')}
+            onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Preciso integrar meu sistema legado com IA. Podemos conversar?', '_blank')}
           >
             <WhatsappLogo size={24} weight="fill" />
-            Falar no WhatsApp Agora
+            Falar Comigo no WhatsApp
           </Button>
           <p className="text-sm text-muted-foreground mt-3">
-            ⚡ Resposta imediata • 💬 Tire suas dúvidas em tempo real
+            ⚡ Resposta direta • 💬 Sem intermediários • 🤝 Atendimento pessoal
           </p>
         </motion.div>
 
@@ -121,28 +121,28 @@ export function ContactSection({ initialService }: ContactSectionProps) {
           >
             <Card className="bg-card/50">
               <CardHeader>
-                <CardTitle className="text-lg">Por que escolher Altus Stratus?</CardTitle>
+                <CardTitle className="text-lg">Por que trabalhar comigo?</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 text-sm">
                 <div className="flex items-start gap-3">
                   <CheckCircle size={20} weight="fill" className="text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold">Experiência Comprovada</p>
-                    <p className="text-muted-foreground">Anos desenvolvendo soluções complexas</p>
+                    <p className="font-semibold">Especialista em Legados</p>
+                    <p className="text-muted-foreground">Anos integrando sistemas antigos com IA</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle size={20} weight="fill" className="text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold">Entrega Rápida</p>
-                    <p className="text-muted-foreground">Projetos finalizados no prazo</p>
+                    <p className="font-semibold">Atendimento Direto</p>
+                    <p className="text-muted-foreground">Você fala comigo, sem intermediários</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle size={20} weight="fill" className="text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold">Suporte Completo</p>
-                    <p className="text-muted-foreground">Manutenção e acompanhamento</p>
+                    <p className="font-semibold">Custo-Benefício</p>
+                    <p className="text-muted-foreground">Preço justo, sem overhead de agência</p>
                   </div>
                 </div>
               </CardContent>
@@ -153,9 +153,9 @@ export function ContactSection({ initialService }: ContactSectionProps) {
                 <div className="flex items-start gap-3">
                   <EnvelopeSimple size={24} className="text-accent flex-shrink-0" />
                   <div className="text-sm">
-                    <p className="font-semibold mb-1">Resposta Rápida</p>
+                    <p className="font-semibold mb-1">Resposta Pessoal</p>
                     <p className="text-muted-foreground">
-                      Respondemos todas as solicitações em até 24 horas úteis
+                      Eu mesmo respondo todas as mensagens em até 24h úteis
                     </p>
                   </div>
                 </div>

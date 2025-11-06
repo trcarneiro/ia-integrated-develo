@@ -6,27 +6,27 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 const testimonials = [
   {
     name: 'Carlos Silva',
-    role: 'CEO, TechCommerce',
-    company: 'E-commerce',
+    role: 'Diretor de TI',
+    company: 'Distribuidora Regional',
     avatar: '/avatars/carlos.jpg',
     rating: 5,
-    text: 'A automação de scraping reduziu 80% do tempo de coleta de preços da concorrência. ROI positivo em menos de 2 meses. Profissional excepcional!',
+    text: 'Nosso ERP dos anos 2000 ganhou um chatbot inteligente! Agora consultamos estoque e vendas falando naturalmente. Economizamos 15h/semana de consultas manuais.',
   },
   {
     name: 'Marina Costa',
-    role: 'Diretora de TI',
-    company: 'FinanceGroup',
+    role: 'Gerente Administrativo',
+    company: 'Indústria Química',
     avatar: '/avatars/marina.jpg',
     rating: 5,
-    text: 'Integração com GPT no nosso CRM revolucionou o atendimento ao cliente. Sistema inteligente, rápido e preciso. Altamente recomendado!',
+    text: 'Integramos nossa base Access com IA para gerar relatórios automáticos. O que levava 2 dias agora leva 5 minutos. Thiago entendeu perfeitamente nosso sistema antigo.',
   },
   {
     name: 'Roberto Mendes',
-    role: 'Head de Produto',
-    company: 'DataInsights',
+    role: 'Sócio',
+    company: 'Escritório de Contabilidade',
     avatar: '/avatars/roberto.jpg',
     rating: 5,
-    text: 'Implementação perfeita das APIs e integrações. Entrega no prazo, código limpo e documentação completa. Voltaremos a contratar com certeza.',
+    text: 'Robô de scraping coleta certidões e documentos automaticamente. Antes eram 4h/dia de trabalho manual. Hoje é tudo automático. ROI em menos de 2 meses!',
   },
 ]
 
@@ -44,10 +44,10 @@ export function TestimonialsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            O Que Dizem Nossos Clientes
+            Casos Reais de Sucesso
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Empresas que já transformaram seus processos com nossas soluções
+            Empresas que modernizaram seus sistemas legados sem gastar fortunas
           </p>
         </motion.div>
 

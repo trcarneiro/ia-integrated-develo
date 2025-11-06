@@ -5,27 +5,27 @@ import { Card, CardContent } from '@/components/ui/card'
 const stats = [
   {
     icon: CheckCircle,
-    value: '50+',
-    label: 'Projetos Entregues',
-    description: 'Soluções implementadas com sucesso',
+    value: '30+',
+    label: 'Integrações Feitas',
+    description: 'Sistemas legados conectados com IA',
   },
   {
     icon: Users,
-    value: '95%',
+    value: '100%',
     label: 'Satisfação',
-    description: 'Clientes que recomendam nosso trabalho',
+    description: 'Todos os clientes recomendam',
   },
   {
     icon: Clock,
-    value: '70%',
-    label: 'Redução de Tempo',
-    description: 'Média de economia em processos manuais',
+    value: '80%',
+    label: 'Menos Trabalho Manual',
+    description: 'Média de redução em tarefas repetitivas',
   },
   {
     icon: TrendUp,
-    value: '3x',
-    label: 'ROI Médio',
-    description: 'Retorno sobre investimento em 6 meses',
+    value: '< 3 meses',
+    label: 'Retorno do Investimento',
+    description: 'ROI médio dos projetos realizados',
   },
 ]
 

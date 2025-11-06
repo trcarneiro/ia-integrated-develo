@@ -41,9 +41,9 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight"
             >
-              Automação, Dados e IA para{' '}
+              Integro Seus Sistemas Legados com{' '}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Seu Negócio
+                Inteligência Artificial
               </span>
             </motion.h1>
 
@@ -53,8 +53,8 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed"
             >
-              Especialista em <strong className="text-foreground">Web Scraping</strong>, <strong className="text-foreground">Integrações com IA</strong> e <strong className="text-foreground">Automação de Sistemas</strong>. 
-              Transformo desafios técnicos em soluções práticas.
+              Especialista em conectar <strong className="text-foreground">sistemas antigos</strong> com <strong className="text-foreground">APIs modernas de IA</strong>. 
+              Trago inteligência artificial para seu ERP, CRM e sistemas corporativos sem precisar reconstruir tudo do zero.
             </motion.p>
 
             <motion.div
@@ -105,9 +105,9 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <CheckCircle size={24} weight="duotone" className="text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Entrega Garantida</h3>
+                <h3 className="font-semibold mb-2">Sem Reescrever Tudo</h3>
                 <p className="text-sm text-muted-foreground">
-                  Projetos finalizados dentro do prazo e orçamento acordados
+                  Seus sistemas legados continuam funcionando, apenas ganham superpoderes de IA
                 </p>
               </CardContent>
             </Card>
@@ -117,9 +117,9 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <ChartLineUp size={24} weight="duotone" className="text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Resultados Mensuráveis</h3>
+                <h3 className="font-semibold mb-2">ROI Rápido</h3>
                 <p className="text-sm text-muted-foreground">
-                  Métricas claras e ROI comprovado em cada implementação
+                  Automatize processos manuais e economize centenas de horas por mês
                 </p>
               </CardContent>
             </Card>
@@ -129,9 +129,9 @@ export function HeroSales({ onContactClick }: HeroSalesProps) {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <Users size={24} weight="duotone" className="text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Suporte Contínuo</h3>
+                <h3 className="font-semibold mb-2">Atendimento Direto</h3>
                 <p className="text-sm text-muted-foreground">
-                  Manutenção, atualizações e suporte técnico sempre disponível
+                  Você fala comigo do início ao fim. Sem intermediários, sem burocracia
                 </p>
               </CardContent>
             </Card>

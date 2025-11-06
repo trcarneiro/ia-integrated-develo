@@ -9,40 +9,36 @@ import {
 
 const faqs = [
   {
-    question: 'Quanto tempo leva para desenvolver um projeto?',
-    answer: 'Projetos simples podem começar em 48h! Web scraping básico: 1-2 semanas. Integrações: 2-4 semanas. IA complexa: 1-2 meses. Trabalhamos com sprints ágeis, você vê resultados desde a primeira semana. Oferecemos cronograma detalhado na proposta inicial.'
+    question: 'Meu sistema é muito antigo (Access, VB, FoxPro). Dá para integrar com IA?',
+    answer: 'SIM! Trabalho justamente com isso. Crio uma camada de API sobre seu sistema antigo sem mexer no código original. Seu sistema continua rodando como sempre, mas ganha recursos modernos de IA. Já integrei Access, FoxPro, Delphi, PHP legado e até sistemas DOS.',
   },
   {
-    question: 'E se eu não gostar do resultado final?',
-    answer: '🎁 Garantia de 30 dias ou seu dinheiro de volta! Se não ficar 100% satisfeito, devolvemos seu investimento integral. Sem perguntas, sem burocracia. Nosso compromisso é sua satisfação total.'
+    question: 'Quanto custa para começar?',
+    answer: 'Projetos simples (robô de scraping, integração básica): a partir de R$ 2.500. Integrações com IA: R$ 3.500-8.000. Modernização completa: R$ 8.000+. Primeira consulta e análise são 100% GRATUITAS. Você só paga se decidir ir em frente.',
   },
   {
-    question: 'Os custos vão além do orçamento inicial?',
-    answer: 'NUNCA! O valor do orçamento é final e fixo. Sem taxas ocultas, sem surpresas. Você paga exatamente o que foi acordado. Se surgir algo fora do escopo, sempre consultamos antes e você decide se quer adicionar ou não.'
+    question: 'Quanto tempo leva para ver resultados?',
+    answer: 'Projetos simples: 1-2 semanas e já está rodando. Integrações médias: 3-4 semanas. Você vê progresso desde a primeira semana com entregas parciais. Não precisa esperar meses para começar a usar!',
   },
   {
-    question: 'Como funciona o processo de orçamento e pagamento?',
-    answer: 'Simples e seguro: 1) Análise gratuita do projeto, 2) Orçamento detalhado em 24h, 3) Pagamento: 50% início + 50% entrega (ou parcelado para projetos maiores), 4) Aceite e começamos! Aceitamos PIX, cartão, transferência.'
+    question: 'E se der problema depois? Vou ficar na mão?',
+    answer: 'NUNCA! Incluo 30 dias de garantia e ajustes gratuitos. Depois disso, você pode contratar suporte mensal (R$ 300-800/mês) ou apenas me chamar quando precisar. Você tem meu contato direto - respondo no mesmo dia. Sem departamentos, sem tickets, sem burocracia.',
   },
   {
-    question: 'E se o site/API mudar e parar de funcionar?',
-    answer: 'Incluímos 30 dias de garantia e ajustes gratuitos! Depois disso, oferecemos planos de manutenção desde R$199/mês que incluem monitoramento 24/7, correções emergenciais e atualizações. Você nunca fica na mão!'
+    question: 'Preciso reescrever meu sistema inteiro?',
+    answer: 'NÃO! Essa é a grande vantagem. Seu sistema legado continua 100% intacto. Eu crio uma "ponte" entre ele e as tecnologias modernas. É tipo adicionar um GPS em um carro antigo - o motor continua o mesmo, só ganha novos recursos.',
   },
   {
-    question: 'Preciso ter conhecimento técnico para usar?',
-    answer: 'ZERO conhecimento necessário! Entregamos tudo pronto: dashboards visuais, planilhas automáticas, relatórios por email, integração direta nos seus sistemas. Você usa, nós cuidamos da tecnologia. Inclui treinamento completo e suporte vitalício.'
+    question: 'Você trabalha sozinho ou tem equipe?',
+    answer: 'Trabalho solo, diretamente com você. Vantagens: custo menor (sem overhead de equipe), você fala comigo do início ao fim, decisões rápidas, foco total no seu projeto. Para projetos muito grandes, tenho parceiros de confiança que posso trazer se necessário.',
   },
   {
-    question: 'É legal fazer web scraping? Posso ter problemas?',
-    answer: 'Totalmente legal quando feito corretamente! Trabalhamos apenas com dados públicos, respeitamos robots.txt e taxas de requisição. Você recebe consultoria jurídica básica incluída e certificado de conformidade. 100% ético e dentro da lei.'
+    question: 'Como funciona o pagamento?',
+    answer: 'Simples: 50% para começar + 50% na entrega. Aceito PIX, transferência ou cartão (parcelado). Para projetos acima de R$ 10k, podemos dividir em 3-4 parcelas conforme entregas. Sem pegadinhas, sem taxas escondidas.',
   },
   {
-    question: 'Por que não contratar um desenvolvedor freelancer mais barato?',
-    answer: 'Qualidade, garantia e suporte fazem a diferença! Freelancers baratos: código de baixa qualidade, sem garantia, somem depois da entrega. Conosco: código profissional, documentado, com garantia, suporte contínuo e manutenção. Você economiza a longo prazo!'
-  },
-  {
-    question: 'Consigo testar antes de comprar?',
-    answer: 'SIM! Oferecemos POC (Prova de Conceito) gratuita para projetos acima de $2.000. Para projetos menores, entregamos a primeira versão funcional em 7 dias. Se não atender expectativas, paramos e devolvemos 100% do valor pago.'
+    question: 'E se minha necessidade for muito específica/estranha?',
+    answer: 'MELHOR AINDA! Adoro desafios técnicos inusitados. Já integrei sistema de gestão hospitalar dos anos 90 com IA, criei robô que lê PDF digitalizado de notas fiscais, conectei ERP AS/400 com WhatsApp. Quanto mais específico, mais interessante!',
   },
 ]
 

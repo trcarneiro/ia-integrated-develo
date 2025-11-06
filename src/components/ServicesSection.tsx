@@ -6,45 +6,45 @@ import { Badge } from '@/components/ui/badge'
 
 const services = [
   {
-    icon: Database,
-    title: 'Web Scraping',
-    description: 'Extração automatizada de dados de websites, APIs e plataformas. Coleta de informações estruturadas para análise, monitoramento de preços, agregação de conteúdo e muito mais.',
+    icon: GitBranch,
+    title: 'Integração IA + Sistemas Legados',
+    description: 'Conecto seus sistemas antigos (ERP, CRM, bancos de dados) com APIs modernas de IA. GPT para análise de dados, chatbots inteligentes, automação de processos e muito mais.',
     features: [
-      'Scraping em larga escala',
-      'Dados estruturados e limpos',
-      'Contorno de proteções anti-bot',
-      'Agendamento automático',
-      'Múltiplos formatos de saída'
+      'Integração com GPT/OpenAI',
+      'Análise inteligente de dados legados',
+      'Chatbots em sistemas antigos',
+      'Automação com IA',
+      'APIs REST/SOAP para conectar tudo'
     ],
-    technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Scrapy', 'Puppeteer'],
-    pricing: 'A partir de $500',
-  },
-  {
-    icon: Robot,
-    title: 'Integração com IA',
-    description: 'Implementação de soluções de inteligência artificial em seus sistemas. GPT, análise de sentimento, classificação, automação inteligente e processamento de linguagem natural.',
-    features: [
-      'APIs OpenAI/GPT',
-      'Modelos customizados',
-      'Processamento de texto',
-      'Análise de dados com IA',
-      'Automação inteligente'
-    ],
-    technologies: ['OpenAI', 'LangChain', 'Python', 'TensorFlow', 'Hugging Face'],
+    technologies: ['Python', 'OpenAI', 'LangChain', 'PHP', 'Node.js'],
     pricing: 'A partir de $800',
   },
   {
-    icon: GitBranch,
-    title: 'Integrações de Sistemas',
-    description: 'Conecte seus sistemas, automatize workflows e integre APIs de terceiros. CRM, ERP, pagamentos, notificações e qualquer serviço que sua empresa precise conectar.',
+    icon: Database,
+    title: 'Modernização de Sistemas',
+    description: 'Seu sistema legado continua rodando, mas ganha camada moderna de APIs, dashboards web e integrações. Trago seu software dos anos 2000 para 2025 sem precisar reescrever tudo.',
     features: [
-      'APIs RESTful',
-      'Webhooks',
-      'Sincronização de dados',
-      'Automação de processos',
-      'Integrações customizadas'
+      'APIs RESTful sobre sistemas antigos',
+      'Dashboards web modernos',
+      'Exportação automatizada de dados',
+      'Sincronização com cloud',
+      'Mobile-ready via API'
     ],
-    technologies: ['PHP', 'Node.js', 'REST APIs', 'GraphQL', 'WebSockets'],
+    technologies: ['REST APIs', 'React', 'Python', 'PostgreSQL', 'Docker'],
+    pricing: 'A partir de $1.200',
+  },
+  {
+    icon: Robot,
+    title: 'Automação & Web Scraping',
+    description: 'Robôs que fazem trabalho manual repetitivo: extrair dados de sites, preencher formulários, processar documentos, gerar relatórios automáticos e integrar com seus sistemas.',
+    features: [
+      'Scraping de sites e portais',
+      'Automação de tarefas manuais',
+      'Processamento de documentos',
+      'Integração com planilhas',
+      'Agendamento automático'
+    ],
+    technologies: ['Python', 'Selenium', 'Beautiful Soup', 'Pandas', 'Celery'],
     pricing: 'A partir de $600',
   },
 ]
