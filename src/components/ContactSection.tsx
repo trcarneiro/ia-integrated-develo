@@ -101,7 +101,7 @@ export function ContactSection({ initialService }: ContactSectionProps) {
           <Button
             size="lg"
             className="bg-green-600 hover:bg-green-700 text-white gap-2"
-            onClick={() => window.open('https://wa.me/5511999999999?text=Olá! Preciso integrar meu sistema legado com IA. Podemos conversar?', '_blank')}
+            onClick={() => window.open('https://wa.me/5531993074190?text=Olá! Preciso integrar meu sistema legado com IA. Podemos conversar?', '_blank')}
           >
             <WhatsappLogo size={24} weight="fill" />
             Falar Comigo no WhatsApp

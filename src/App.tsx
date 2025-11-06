@@ -1,13 +1,20 @@
 import { useState, useRef } from 'react'
 import { Toaster } from 'sonner'
+import { StickyHeader } from './components/StickyHeader'
+import { ScrollProgressBar } from './components/ScrollProgressBar'
 import { HeroSales } from './components/HeroSales'
 import { StatsSection } from './components/StatsSection'
 import { ServicesSection } from './components/ServicesSection'
+import { BeforeAfterSection } from './components/BeforeAfterSection'
+import { HowItWorksSection } from './components/HowItWorksSection'
 import { ROICalculatorSection } from './components/ROICalculatorSection'
+import { FeasibilityChecker } from './components/FeasibilityChecker'
 import { PortfolioSection } from './components/PortfolioSection'
 import { TestimonialsSection } from './components/TestimonialsSection'
+import { CertificationsSection } from './components/CertificationsSection'
+import { GuaranteesSection } from './components/GuaranteesSection'
+import { ObjectionsSection } from './components/ObjectionsSection'
 import { LeadQualifierBot } from './components/LeadQualifierBot'
-import { FeasibilityChecker } from './components/FeasibilityChecker'
 import { TechStackSection } from './components/TechStackSection'
 import { FAQSection } from './components/FAQSection'
 import { ContactSection } from './components/ContactSection'
@@ -31,33 +38,65 @@ function App() {
     <div className="min-h-screen bg-background text-foreground">
       <Toaster position="top-right" theme="dark" />
       
+      {/* Header Fixo + Barra de Progresso */}
+      <StickyHeader />
+      <ScrollProgressBar />
+      
+      {/* Hero + Proposta de Valor */}
       <HeroSales onContactClick={() => scrollToContact()} />
       
+      {/* Prova Social Imediata */}
       <StatsSection />
       
+      {/* Serviços Oferecidos */}
       <ServicesSection onContactClick={scrollToContact} />
       
+      {/* Antes/Depois - Prova de Resultado */}
+      <BeforeAfterSection />
+      
+      {/* Como Funciona - Remove Fricção */}
+      <HowItWorksSection />
+      
+      {/* Calculadora ROI - Ferramenta de Conversão */}
       <ROICalculatorSection />
       
+      {/* Verificador de Viabilidade - Qualificação de Lead */}
       <FeasibilityChecker />
       
+      {/* Portfolio Detalhado - Credibilidade */}
       <PortfolioSection />
       
+      {/* Depoimentos - Prova Social */}
       <TestimonialsSection />
       
+      {/* Certificações - Autoridade Técnica */}
+      <CertificationsSection />
+      
+      {/* Garantias - Remove Risco */}
+      <GuaranteesSection />
+      
+      {/* Objeções - Remove Barreiras */}
+      <ObjectionsSection />
+      
+      {/* Chatbot de Qualificação - Interação */}
       <LeadQualifierBot />
       
+      {/* Stack Técnica - Transparência */}
       <TechStackSection />
       
+      {/* FAQ - Últimas Dúvidas */}
       <FAQSection />
       
+      {/* Formulário de Contato */}
       <div ref={contactRef}>
         <ContactSection initialService={selectedService} />
       </div>
 
+      {/* CTA Final - Última Chance */}
       <CTASection onContactClick={() => scrollToContact()} />
       
-      <Footer githubUrl="https://github.com" />
+      {/* Footer */}
+      <Footer githubUrl="https://github.com/trcarneiro" />
     </div>
   )
 }
