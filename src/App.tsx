@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import { Toaster } from 'sonner'
 import { StickyHeader } from './components/StickyHeader'
 import { ScrollProgressBar } from './components/ScrollProgressBar'
+import { ExitIntentPopup } from './components/ExitIntentPopup'
 import { HeroSales } from './components/HeroSales'
 import { StatsSection } from './components/StatsSection'
 import { ServicesSection } from './components/ServicesSection'
@@ -37,6 +38,9 @@ function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Toaster position="top-right" theme="dark" />
+      
+      {/* Exit Intent Popup - Lead Capture */}
+      <ExitIntentPopup />
       
       {/* Header Fixo + Barra de Progresso */}
       <StickyHeader />
