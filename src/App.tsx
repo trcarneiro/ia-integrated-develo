@@ -21,10 +21,20 @@ import { FAQSection } from './components/FAQSection'
 import { ContactSection } from './components/ContactSection'
 import { CTASection } from './components/CTASection'
 import { Footer } from './components/Footer'
+import { LeadsDashboard } from './components/LeadsDashboard'
 
 function App() {
   const [selectedService, setSelectedService] = useState<string>('')
+  const [showDashboard, setShowDashboard] = useState(false)
   const contactRef = useRef<HTMLDivElement>(null)
+
+  // Check URL for dashboard access (simple routing)
+  useState(() => {
+    const path = window.location.pathname
+    if (path === '/dashboard' || path.includes('dashboard')) {
+      setShowDashboard(true)
+    }
+  })
 
   const scrollToContact = (service?: string) => {
     if (service) {
@@ -33,6 +43,16 @@ function App() {
     setTimeout(() => {
       document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
     }, 100)
+  }
+
+  // Render dashboard if URL matches
+  if (showDashboard) {
+    return (
+      <>
+        <Toaster position="top-right" theme="dark" />
+        <LeadsDashboard />
+      </>
+    )
   }
 
   return (
