@@ -1,9 +1,30 @@
 import { motion } from 'framer-motion'
-import { Database, Robot, GitBranch, ChartLineUp, Globe, ShoppingCart } from '@phosphor-icons/react'
+import { Database, Robot, GitBranch, ChartLineUp, Globe, ShoppingCart, Bank, ArrowSquareOut } from '@phosphor-icons/react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
-const showcaseProjects = [
+type ShowcaseProject = {
+  icon: typeof Database
+  title: string
+  category: string
+  description: string
+  results: string[]
+  technologies: string[]
+  color: string
+  link?: string
+}
+
+const showcaseProjects: ShowcaseProject[] = [
+  {
+    icon: Bank,
+    title: 'Licitações de Educação em MG',
+    category: 'Web Scraping',
+    description: 'Busca de editais do PNCP para fornecedores de escolas, institutos federais, universidades e prefeituras de Minas Gerais. No ar, com acesso gratuito durante o teste.',
+    results: ['Importação automática do PNCP', 'Filtros por órgão, município e categoria', 'Alertas salvos e exportação CSV'],
+    technologies: ['Next.js', 'Prisma', 'MySQL', 'Docker'],
+    color: 'primary',
+    link: 'https://licitacoes.altostratus.com.br'
+  },
   {
     icon: Database,
     title: 'Sistema de Monitoramento de Preços',
@@ -133,6 +154,18 @@ export function PortfolioSection() {
                         ))}
                       </div>
                     </div>
+
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary hover:underline"
+                      >
+                        Ver projeto no ar
+                        <ArrowSquareOut size={16} />
+                      </a>
+                    )}
                   </CardContent>
                 </Card>
               </motion.div>
